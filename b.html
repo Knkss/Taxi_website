@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+   /* Style for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Change from center to space-around for equal spacing */
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #FFD700; /* Add this line to make the button yellow */
+    border-radius: 55px; /* Add this line to make the button corners rounded */
+}
+
+/* Style for the cards container */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for the individual card */
+.card {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+}
+
+/* Common button style for all cards */
+.card button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the card images */
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 373px; 
+    max-height: 224px; 
+}
+
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a onclick="showCard('new')">New</a>
+        <a onclick="showCard('old')">Old</a>
+        <a onclick="showCard('renewed')">Renewed</a>
+    </div>
+
+    <div class="cards">
+        <!-- New Cards -->
+        <div id="newCard1" class="card">
+            <h2>New Card 1</h2>
+            <img src="5.jpg" alt="New Card 1 Image">
+            <button onclick="sendToWhatsApp('New Card 1')">Send to WhatsApp</button>
+        </div>
+        <div id="newCard2" class="card">
+            <h2>New Card 2</h2>
+            <img src="6.jpg" alt="New Card 2 Image">
+            <button onclick="sendToWhatsApp('New Card 2')">Send to WhatsApp</button>
+        </div>
+        <div id="newCard3" class="card">
+            <h2>New Card 3</h2>
+            <img src="11.jpg" alt="New Card 3 Image">
+            <button onclick="sendToWhatsApp('New Card 3')">Send to WhatsApp</button>
+        </div>
+        <div id="newCard4" class="card">
+            <h2>New Card 4</h2>
+            <img src="12.jpg" alt="New Card 4 Image">
+            <button onclick="sendToWhatsApp('New Card 4')">Send to WhatsApp</button>
+        </div>
+
+        <div id="newCard5" class="card">
+            <h2>New Card 1</h2>
+            <img src="13.jpg" alt="New Card 1 Image">
+            <button onclick="sendToWhatsApp('New Card 1')">Send to WhatsApp</button>
+        </div>
+        <div id="newCard6" class="card">
+            <h2>New Card 2</h2>
+            <img src="new_image2.jpg" alt="New Card 2 Image">
+            <button onclick="sendToWhatsApp('New Card 2')">Send to WhatsApp</button>
+        </div>
+        <div id="newCard7" class="card">
+            <h2>New Card 3</h2>
+            <img src="new_image3.jpg" alt="New Card 3 Image">
+            <button onclick="sendToWhatsApp('New Card 3')">Send to WhatsApp</button>
+        </div>
+        <div id="newCard8" class="card">
+            <h2>New Card 4</h2>
+            <img src="new_image4.jpg" alt="New Card 4 Image">
+            <button onclick="sendToWhatsApp('New Card 4')">Send to WhatsApp</button>
+        </div>
+
+
+
+        <!-- Old Cards -->
+        <div id="oldCard1" class="card">
+            <h2>Old Card 1</h2>
+            <img src="old_image1.jpg" alt="Old Card 1 Image">
+            <button onclick="sendToWhatsApp('Old Card 1')">Send to WhatsApp</button>
+        </div>
+        <div id="oldCard2" class="card">
+            <h2>Old Card 2</h2>
+            <img src="old_image2.jpg" alt="Old Card 2 Image">
+            <button onclick="sendToWhatsApp('Old Card 2')">Send to WhatsApp</button>
+        </div>
+        <div id="oldCard3" class="card">
+            <h2>Old Card 3</h2>
+            <img src="old_image3.jpg" alt="Old Card 3 Image">
+            <button onclick="sendToWhatsApp('Old Card 3')">Send to WhatsApp</button>
+        </div>
+        <div id="oldCard4" class="card">
+            <h2>Old Card 4</h2>
+            <img src="old_image4.jpg" alt="Old Card 4 Image">
+            <button onclick="sendToWhatsApp('Old Card 4')">Send to WhatsApp</button>
+        </div>
+
+        <!-- Renewed Cards -->
+        <div id="renewedCard1" class="card">
+            <h2>Renewed Card 1</h2>
+            <img src="renewed_image1.jpg" alt="Renewed Card 1 Image">
+            <button onclick="sendToWhatsApp('Renewed Card 1')">Send to WhatsApp</button>
+        </div>
+        <div id="renewedCard2" class="card">
+            <h2>Renewed Card 2</h2>
+            <img src="renewed_image2.jpg" alt="Renewed Card 2 Image">
+            <button onclick="sendToWhatsApp('Renewed Card 2')">Send to WhatsApp</button>
+        </div>
+        <div id="renewedCard3" class="card">
+            <h2>Renewed Card 3</h2>
+            <img src="renewed_image3.jpg" alt="Renewed Card 3 Image">
+            <button onclick="sendToWhatsApp('Renewed Card 3')">Send to WhatsApp</button>
+        </div>
+        <div id="renewedCard4" class="card">
+            <h2>Renewed Card 4</h2>
+            <img src="renewed_image4.jpg" alt="Renewed Card 4 Image">
+            <button onclick="sendToWhatsApp('Renewed Card 4')">Send to WhatsApp</button>
+        </div>
+        
+        <!-- You can continue adding more cards here -->
+    </div>
+
+    <script>
+        // Function to show the selected card and hide others
+        function showCard(cardType) {
+            document.querySelectorAll('.cards .card').forEach(card => {
+                card.style.display = 'none';
+            });
+            document.querySelectorAll(`[id^="${cardType}Card"]`).forEach(card => {
+                card.style.display = 'block';
+            });
+        }
+
+        // Function to send card title to WhatsApp
+        function sendToWhatsApp(cardTitle) {
+            // Replace 'your-whatsapp-number' with the actual WhatsApp number
+            const whatsappNumber = 'your-whatsapp-number';
+            const message = encodeURIComponent('Sending ' + cardTitle + ' to WhatsApp');
+            const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+            window.open(whatsappURL, '_blank');
+        }
+
+        // Show the 'New' cards by default
+        showCard('new');
+    </script>
+</body>
+</html>
